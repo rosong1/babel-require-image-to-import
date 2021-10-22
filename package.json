@@ -1,0 +1,24 @@
+{
+  "name": "babel-require-image-to-import",
+  "version": "1.0.0",
+  "description": "Convert the require image method to the import method",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "keywords": [
+    "babel-plugin"
+  ],
+  "author": {
+    "name": "rosong",
+    "email": "rousong111@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "jest": "^27.3.1",
+    "typescript": "^4.4.4"
+  }
+}

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`simple 1`] = `
+"import _img_uid from \\"./img/icon1.png\\";
+const img1 = _img_uid;"
+`;
+
+exports[`with array 1`] = `
+"import _img_uid3 from \\"@/img/item2.svg\\";
+import _img_uid2 from \\"@/img/item1.jpg\\";
+import _img_uid from \\"./img/icon1.png\\";
+const img1 = _img_uid;
+const list = [{
+  label: \\"item1\\",
+  value: _img_uid2
+}, {
+  label: \\"item2\\",
+  value: _img_uid3
+}];"
+`;
+
+exports[`with jsx 1`] = `
+"function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import _img_uid4 from \\"./img/default-avatar.png\\";
+import _img_uid3 from \\"@/img/item2.png\\";
+import _img_uid2 from \\"@/img/item1.jpeg\\";
+import _img_uid from \\"./img/icon1.webp\\";
+const img1 = _img_uid;
+const list = [{
+  label: \\"item1\\",
+  value: _img_uid2
+}, {
+  label: \\"item2\\",
+  value: _img_uid3
+}];
+
+const ImgComponent = props => {
+  const {
+    onError,
+    defaultImg,
+    ...rest
+  } = props;
+  return /*#__PURE__*/React.createElement(\\"img\\", _extends({}, rest, {
+    onError: e => {
+      e.target.onerror = null;
+      e.target.src = defaultImg || _img_uid4;
+    }
+  }));
+};"
+`;
